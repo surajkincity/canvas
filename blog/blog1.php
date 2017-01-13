@@ -129,7 +129,7 @@
 <input type="text" placeholder="Name" name='name' style="width:150px;" class="form-control left"> </input>
         <button type="submit" class="btn btn-success right" > Post! </button>
 
-
+</form>
 
 
           <?php
@@ -150,16 +150,14 @@
           else{
             $handle = fopen('blog1.html','a');
             fwrite($handle, "<p><b> "    .$name1. ":</b>"  .$comment.  "</p><hr>" );
-
-
-       fclose($handle);
+            fclose($handle);
        echo("<p>" .$comment. "</p>");
 
 
 
               }
           }
-      ?>  </form>
+      ?>
     </div>
     <div class='col-md-2'>
     </div>
