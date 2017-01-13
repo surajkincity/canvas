@@ -151,7 +151,7 @@
             $handle = fopen('blog1.html','a+');
             fwrite($handle, "<p><b> "    .$name1. ":</b>"  .$comment.  "</p><hr>" );
             fclose($handle);
-       echo("<p>" .$comment. "</p>");
+       echo("Thanks for posting");
 
 
 
