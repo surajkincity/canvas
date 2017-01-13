@@ -61,7 +61,7 @@
 
               if ($email=="")
                   {
-                  echo "All fields are required, please fill <a href=\"\">the form</a> again.";
+                  echo "All fields are required, please fill the form again.";
                   }
                  else{         $handle = fopen('../leads.html','a');
                 fwrite($handle,  "<b>email:</b> ".$email." , "."<b>website:</b>".$website."  <br>");
@@ -155,7 +155,7 @@
 
           if ($email=="" or $pot!="")
               {
-              echo "All fields are required, please fill <a href=\"\">the form</a> again.";
+              echo "All fields are required, please fill the form again.";
               }
           else{
             $handle = fopen('blog1.html','a');
