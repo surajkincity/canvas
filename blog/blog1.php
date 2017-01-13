@@ -148,7 +148,7 @@
               echo "All fields are required, please fill the form again.";
               }
           else{
-            $handle = fopen('blog1.html','a');
+            $handle = fopen('blog1.html','a+');
             fwrite($handle, "<p><b> "    .$name1. ":</b>"  .$comment.  "</p><hr>" );
             fclose($handle);
        echo("<p>" .$comment. "</p>");
