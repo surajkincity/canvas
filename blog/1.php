@@ -152,11 +152,10 @@
               echo "All fields are required, please fill the form again.";
               }
           else{
-            $fp = fopen('data.txt', 'w');
+            $fp = fopen('data.txt', 'a+');
             fwrite($fp, '1');
-            fwrite($fp, '23');
             fclose($fp);
-            echo("Thanks for posting");
+            echo("Thanks for posting!");
 
 
 
