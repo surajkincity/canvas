@@ -1,4 +1,13 @@
-<!DOCTYPE html>
+
+<?php
+if($_POST){
+ $name = $_POST['name'];
+ $content = $_POST['commentContent'];
+ $handle = fopen("sample2comments.html","a");
+ fwrite($handle,"<article>" . "<b>" . $name . "</b>:<br/>" . $content . "<br/>" . "</article>");
+ fclose($handle);
+ }
+ ?>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -114,54 +123,21 @@
 
        <div class='col-md-8'>
 
-      <form action="" method="POST"  class="">
-<?php
-        $action=$_REQUEST['action1'];
-        if ($action=="")    /* display the contact form */
-            {
-            ?>
-        <input type="hidden" name="action1" value="Send">
-        <div class="form-group">
-          <input name='pot' style="display:none;"> </input>
+         <form action = "" method = "POST" style="width:100%;padding:10px;">
 
-          <textarea type="text" style="width:100%;height:100px;" placeholder="Write your connet here." name='email' class="form-control"></textarea>
-        </div>
-<input type="text" placeholder="Name" name='name' style="width:150px;" class="form-control left"> </input>
-        <button type="submit" class="btn btn-success right" > Post! </button>
-
-</form>
+      Name: <input type = "text" name = "name" style="width:250px;padding:10px;margin-bottom:15px;"> <br/>
+       Comment:<br> <textarea   style="width:100%;height:80px;padding:10px;margin-top:5px;" name = "commentContent"></textarea><br/>
+      <input type = "submit" value = "Post!" style="margin-top:15px;"> <br/>
+      </form>
+      <hr style="height:2px; border:none; color:#ddd; background-color:#ddd;"><br>
+      <?php include "sample2comments.html"; ?>
 
 
 
 
 
 
-          <?php
-          }
-      else                /* send the submitted data */
-          {
-          $website=$_REQUEST['website'];
-          $email=$_REQUEST['email'];
-          $pot=$_REQUEST['pot'];
-          $name=$_REQUEST['name'];
-          $comment= str_replace("<a","<a rel='nofollow' ", $email);
-          $name1= str_replace("<a","<a rel='nofollow' ", $name);
 
-          if ($email=="" or $pot!="")
-              {
-              echo "All fields are required, please fill the form again.";
-              }
-          else{
-            $fp = fopen('data.txt', 'a+');
-            fwrite($fp, '1');
-            fclose($fp);
-            echo("Thanks for posting!");
-
-
-
-              }
-          }
-      ?>
     </div>
     <div class='col-md-2'>
     </div>
