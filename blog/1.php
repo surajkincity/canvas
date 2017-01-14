@@ -112,6 +112,8 @@ if($_POST){
            <hr><b>Comments</b><br><br>
   <?php include 'blog1.html';?><br>
 
+  <?php include "sample2comments.html"; ?>
+
          </div>
          <div class='col-md-2'>
          </div>
@@ -129,8 +131,7 @@ if($_POST){
        Comment:<br> <textarea   style="width:100%;height:80px;padding:10px;margin-top:5px;" name = "commentContent"></textarea><br/>
       <input type = "submit" value = "Post!" style="margin-top:15px;"> <br/>
       </form>
-      <hr style="height:2px; border:none; color:#ddd; background-color:#ddd;"><br>
-      <?php include "sample2comments.html"; ?>
+
 
 
 
