@@ -1,5 +1,5 @@
 <?php
-$file = 'people.txt';
+$file = 'leads.html';
 // The new person to add to the file
 $person = "John Smith\n";
 // Write the contents to the file,
