@@ -2,9 +2,8 @@
 
 if (1 == 1)
 {
-
-  $File = "leads.html";
-  $fh = fopen ($File, 't') or die("can't open file");
-  fclose($fh);
+$myfile = fopen("leads.html", "w") or die("Unable to open file!");
+$txt = "John Doe\n";
+fwrite($myfile, $txt);
 }
 ?>
