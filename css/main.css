@@ -1,3 +1,6 @@
+body{ background-attachment: fixed;
+     background-repeat: no-repeat;
+     background-size: 100%;}
 .bloglanding{padding-top: 10%;text-align: center;}
 .navbar-brand{color: white !important;}
 .bloglanding{text-align: center;}
@@ -15,3 +18,25 @@ footer{text-align: center;padding:6px;padding-top: 10px !important;}
     font-size: 20px;
     line-height: 1.75;}
     .content p{padding: 5px;text-align: justify;}
+.logo
+.menu p{float: right!important;}
+.righttext{    text-align: right;}
+.center {text-align: center;}
+.landing {padding-top:15%;padding-bottom: 15%;
+color:white;
+background-color: rgba(0, 0, 0, 0.50);
+
+ }
+
+ .landing h1{font-size: 60px;font-weight: 600;}
+ .landing p{font-size: 18px;font-weight: 400;}
+.padding5{padding:5%;}
+.describe{padding:5%;}
+.description{font-size: 18px;padding:5%;}
+.describe img{width: 250px;height:150px;}
+.describe{text-align: center;background-color: #5cb85c;color:white;}
+.usp {text-align: center;padding-top: 5%; padding-bottom: 5%;}
+.footer{background-color: #222;color: white;}
+.cta{padding-top: 4%;}
+#navbar a{color: white;text-decoration: none;padding:15px;font-weight: 600;font-size: 15px;}
+.menu{padding-top:15px;}
